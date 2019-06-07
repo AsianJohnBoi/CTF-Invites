@@ -2,10 +2,13 @@
 module.exports = function(app) {
   var invites = require('../controllers/invitesController');
 
-  // invites Routes
-  app.route('/tasks')
-    // .get(invites.list_all_tasks)
+  app.route('/')
     .post(invites.create_a_task);
+
+  // invites Routes
+  // app.route('/tasks')
+  //   // .get(invites.list_all_tasks)
+  //   .post(invites.create_a_task);
 
 
   // app.route('/tasks/:taskId')

@@ -24,4 +24,4 @@ var routes = require('./api/routes/invitesRoutes'); //importing route
 routes(app); //register the route
 app.listen(port);
 
-console.log('Invites RESTful API server started on: ' + port);
+console.log('RESTful API server started on port ' + port);
