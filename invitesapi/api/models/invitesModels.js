@@ -4,9 +4,17 @@ var Schema = mongoose.Schema;
 
 
 var TaskSchema = new Schema({
-  name: {
+  // name: {
+  //   type: String,
+  //   required: 'Give me a name'
+  // },
+  Code: {
     type: String,
-    required: 'Kindly enter the name of the task'
+    default: 'FLAG{}' //Here's the FLAG
+  },
+  Format: {
+    type: String,
+    default: 'encoded'
   },
   Created_date: {
     type: Date,

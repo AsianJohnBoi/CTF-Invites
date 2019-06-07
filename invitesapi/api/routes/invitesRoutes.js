@@ -1,15 +1,15 @@
 'use strict';
 module.exports = function(app) {
-  var todoList = require('../controllers/invitesController');
+  var invites = require('../controllers/invitesController');
 
-  // todoList Routes
+  // invites Routes
   app.route('/tasks')
-    .get(todoList.list_all_tasks)
-    .post(todoList.create_a_task);
+    // .get(invites.list_all_tasks)
+    .post(invites.create_a_task);
 
 
-  app.route('/tasks/:taskId')
-    .get(todoList.read_a_task)
-    .put(todoList.update_a_task)
-    .delete(todoList.delete_a_task);
+  // app.route('/tasks/:taskId')
+  //   .get(invites.read_a_task)
+  //   .put(invites.update_a_task)
+  //   .delete(invites.delete_a_task);
 };

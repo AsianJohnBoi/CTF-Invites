@@ -1,5 +1,5 @@
 function response() {
-	console.log("You're on the right track");
+	console.log("Like my game? >:D");
 }
 
 function verifyInviteCode() {
@@ -8,8 +8,8 @@ function verifyInviteCode() {
 
 function makeInviteCode() {
 	var theData = {
-		data: "SW4gb3JkZXIgdG8gZ2VuZXJhdGUgdGhlIGludml0ZSBjb2RlLCBtYWtlIGEgUE9TVCByZXF1ZXN0IHRvIC9pbnZpdGUvZ2VuZXJhdGU=",
-		enctype: "BASE64"
+		data: "TWFrZSBhIFBPU1QgcmVxdWVzdCB0byBteSBzaXRlIGlwIGFkZHJlc3MuIFdoaWNoIHBvcnQgaXMgb3Blbj8=",
+		enctype: "encoded"
 	};
 	return theData;
 }
