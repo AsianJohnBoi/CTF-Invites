@@ -7,7 +7,7 @@ var express = require('express'),
   
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/invites'); 
+mongoose.connect('mongodb://localhost/'); 
 
 var connection = mongoose.connection;
 
